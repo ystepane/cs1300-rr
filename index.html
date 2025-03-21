@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Redesign</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Responsive Redesign Case Study</h1>
+      <nav>
+        
+      </nav>
+    </header>
+    <main>
+      <section id="overview">
+        <h2>Welcome</h2>
+        <p>
+          Welcome to the Redesign Journey! The goal of this case study is to practice the workflow of redesigning
+          a web page by using an existing design that could benefit from some changes...
+        </p>
+      </section>
+     
+      <section id="part1">
+        <h2>Part 1: Identifying Usability Problems</h2>
+        <h3>Webpage</h3>
+        <p>
+          <a href="https://www.secure-booker.com/BodhiProvidence/"
+            >Bodhi Providence Booking Page</a
+          >
+        </p>
+        <p>
+          I recently visited this webpage and noticed a few areas that could use a sprinkle of redesigning for a better user experience. 
+          The design could be more optimal and comfortable, and I think it would really shine with some Responsive Redesigning. 
+          Below, you can see the current state of the page we're working with. Let's make it awesome together! </p>
+          <br>
+            <img src="pics/bodhi_orig.png" alt="Original Webpage" class="img-orig">
+
+<section>
+  <h3>Usability Analysis</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Aspect</th>
+        <th>Details</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Efficiency</strong></td>
+        <td>The page is not intuitive and requires a lot of trial and error, which frustrates users and may drive potential clients away.</td>
+      </tr>
+      <tr>
+        <td><strong>Learnability</strong></td>
+        <td>The website is not easy to remember how to use, which is problematic for infrequent users. This can frustrate regular users who have to relearn the interface each time.</td>
+      </tr>
+      <tr>
+        <td><strong>Memorability</strong></td>
+        <td>Users might need to write down the correct order of actions. The existing guide is outdated and of poor quality, adding to user confusion.</td>
+      </tr>
+      <tr>
+        <td><strong>Conceptual Model</strong></td>
+        <td>The model makes sense but is outdated. The website looks like a basic booking page with necessary functionality but lacks modern design elements.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3> Identified Problems..</h3>
+  <ol class="issue-list">
+    <li>The website does not adapt to different screen sizes and remains fixed.</li>
+    <li>Dropdown menus block other options.</li>
+    <li>The booking website's style is inconsistent with the main website, leading to a lack of branding and a disjointed user experience.</li>
+    <li>The font is tiny and difficult to read without significant zooming in.</li>
+  </ol>
+    <h3> WAVE Issues</h3>
+    <ol class="issue-list">
+  <li>Very low contrast: Text is barely readable.</li>
+  <li>Several empty buttons.</li>
+  <li>Redundant title text.</li>
+  <li>Missing alt text for images.</li>
+  <li>Unordered lists.</li>
+  <li>Device-dependent event handler.</li>
+  <li>Missing label for select elements.</li>
+  <li>No defined page regions.</li>
+  <li>No ARIA lables found.</li>
+  <li>Linked image missing alternative text.</li>
+</ol>
+</section>
+      <section id="part2">
+        <h2>Part 2: Visual Redesign</h2>
+        
+        <h3>Mockups</h3>
+        <p>
+          Now that we know of the issues, let's use Figma to create the mockups of our
+          screen, one for each of the screen sizes!
+        </p>
+        <p>We will start with developing the style palette with main colors and elements for the redesigned webpage:</p>
+        <img src="pics/style.png" alt="Style palette" class="style-img">
+       <section class="image-display">
+        <p>Now, let's move on to the mock ups for 3 different screen sizes: Phone, Tablet and Desktop! Click on the dropdown below to see a mock up for each</p>
+        <div class="dropdown-container">
+          <label for="screen-size">Choose screen size:</label>
+          <select id="screen-size" name="screen-size" onchange="showImage()">
+            <option value="desktop">Desktop</option>
+            <option value="phone">Phone</option>
+            <option value="tablet">Tablet</option>
+          </select>
+        </div>
+        <div class="image-item" id="image-container">
+          <img src="pics/desk.png" alt="Desk" id="displayed-image">
+        </div>
+      </section>
+      <p>There are a few things that we will focus on redesigning.. You can see them above on the Figma mockups, but let's describe them in more detail!</p>
+       <ul class="grocery-list">
+        <li>The quick tutorial is now has it's own section on the right-side help bar. </li>
+        <li>Choosing the location is intuitive - it's the first step! Whether you're in Providence or Newport, the buttons are organized in a clear hierarchy, 
+          making it super easy to pick your destination. It's like having a magical map that leads you straight to relaxation.</li>
+        <li>The service list is organized, allowing users to pick their desired service without any hassle. 
+          It's like having a menu of spa delights at your fingertips—just choose and enjoy! Users need to answer a few questions, intuitively, one after the other.</li>
+        <li>Choosing a preferred staff member is now a delightful experience. The staff list is clearly displayed, after the choice of the procedure, 
+          allowing users to pick your favorite spa professional with ease.</li>
+        <li>On phones, the Date and Time are split into separate rows, preserving the hierarchy from the desktop version. 
+          On tablets, the layout adjusts to fit the bigger screen, 
+          making the booking process seamless across all devices. 
+          Almost like the website is doing yoga to fit perfectly on any screen!</li>
+        <li>The main booking button stands out, marking the final step of the process.</li>
+        <li>For phone users, the "More info" section is placed at the bottom of the screen, 
+          saving space and keeping the layout tidy. 
+          Flexboxes ensure that the layout stays consistent, no matter the device.</li>
+        <li>Finally, you can easily view bookings, contact the salon, change reservation, shop online, and explore services and specials. 
+          The website is now well-organized, ready to provide a great booking experience.</li>
+    </ul>
+      </section>
+      <section id="part3">
+        <h2>Part 3: Responsive Redesign</h2>
+        <p>Based on the mockups, we will create the page using HTML and CSS...</p>
+        </p>
+        <a href="https://ystepane.github.io/bodhi-redesign/"
+            >Redesigned webpage</a
+          >
+          <br>
+        <embed src="https://ystepane.github.io/bodhi-redesign/" 
+         type="text/html" 
+          width="60%" 
+       height="700px"/>
+      </section>
+      <section id="testing">
+        <h2>Testing for Responsiveness and Accessibility</h2>
+        <p>
+          After using Chrome's "Toggle Device Toolbar", we can confirm that the redesigned webpage is repsonsive to devices of different sizes. 
+        </p>
+        <p>A few reflections after completing this case study...: </p>
+        <ul>
+          <li>Redesign is not easy! While we can be quick to judge "bad design" webistes and wish for a better look, when I actually tried to come up with a better idea,
+             it ended up being quite challenging. I often thought that the original website was not that bad:)</li>
+             <li>Figma Mock up != Webpage: I really liked the way my Figma prototypes looked. But when I put it on a webpage, it did not look as good as I intened it to.</li>
+             <li>Part 1 frustrations has been adddressed successfully: new webpage has the color scheme that is in line with the business's main website, the contrasts are now clear and are passing the respective tests, there is clear hierarchy and the booking process is organized in a "follow the list" way. Learnability, Efficiency and Memorability are improved! And Wave Score is much better too!</li>
+             <br>
+        </ul>
+      </section>
+      <section id="credits">
+      <h2>Credits</h2>
+      <p>Some resources worth mentioning..</p>
+      <ul>
+        <li>CS1300 Handout, Studios, Critique II</li>
+        <li>geeksforgeeks article on creating nested webpage in HTML</li>
+        <li>Web.dev's article on creative lists</li>
+      </ul>
+    </main>
+    <footer>
+      <p>&copy; Julia Stepanenko</p>
+    </footer>
+      <script src="script.js"></script>
+
+  </body>
+</html>

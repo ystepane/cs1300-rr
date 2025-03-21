@@ -1,0 +1,231 @@
+body {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 1rem;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+header {
+  background-color: #6e6baa;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+}
+
+main {
+  padding: 1rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table,
+th,
+td {
+  border: 1px solid #a3a1d1;
+}
+
+th,
+td {
+  padding: 0.5rem;
+  text-align: left;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+footer {
+  background-color: #6e6baa;
+  color: white;
+  text-align: center;
+  padding: 0.5rem;
+  position: fixed;
+  height: 5%;
+  width: 100%;
+  bottom: 0;
+}
+
+ol {
+  padding: 0;
+  margin: 0;
+  max-width: 700px;
+  position: relative;
+}
+
+ol {
+  padding: 1rem;
+  margin: 1rem;
+  max-width: 700px;
+  position: relative;
+  border-radius: 0.5rem;
+  background-color: #f5f5f5;
+}
+
+.issue-list {
+  padding: 1rem;
+  margin: 1rem;
+  max-width: 70%;
+  position: relative;
+  border-radius: 0.5rem;
+  background-color: #f5f5f5;
+}
+
+.issue-list li {
+  padding: 0.5rem 1.5rem 1rem;
+  border-radius: 1.5rem;
+  background: #d8bfd8;
+}
+
+.issue-list li + li {
+  margin-top: 1rem;
+}
+
+.issue-list ::marker {
+  font-weight: 600;
+  color: #a3a1d1;
+  font-size: 1.8rem;
+}
+
+::marker {
+  font-weight: 600;
+  color: #a3a1d1;
+  font-size: 1.8rem;
+}
+
+.image-display {
+  text-align: left;
+  padding: 1rem;
+}
+
+.dropdown-container {
+  margin-bottom: 1rem;
+}
+
+.dropdown-container label {
+  margin-right: 0.5rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+.dropdown-container select {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+.image-item img {
+  width: 40%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.style-img {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.img-orig {
+  width: 50%;
+}
+.text-content {
+  max-width: 300px;
+  margin-left: 1rem;
+}
+
+.text-content p {
+  font-size: 1rem;
+  color: #333;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", cursive;
+  font-size: 1.4rem;
+  background: whitesmoke;
+  margin: 0;
+  padding: 1rem;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+.grocery-list {
+  list-style-position: inside;
+  width: 70%;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  border-radius: 0.1rem;
+}
+
+.grocery-list li {
+  padding: 0 0 0 1rem;
+}
+
+.grocery-list li:not(:last-child) {
+  border-bottom: 1px solid lightblue;
+}
+
+.grocery-list li:first-child {
+  margin-top: 1rem;
+}
+
+.grocery-list li:last-child {
+  margin-bottom: 1rem;
+}
+.grocery-list ::marker {
+  --image: "🧖‍♀️ ";
+  content: var(--image);
+}
+
+.grocery-list li:nth-child(2)::marker {
+  --image: "🧘 ";
+}
+
+.grocery-list li:nth-child(3)::marker {
+  --image: "💆 ";
+}
+
+.grocery-list li:nth-child(4)::marker {
+  --image: "🌿 ";
+}
+
+.grocery-list li:nth-child(5)::marker {
+  --image: "🕯️ ";
+}
+
+.grocery-list li:nth-child(6)::marker {
+  --image: "🛀 ";
+}
+
+.grocery-list li:nth-child(7)::marker {
+  --image: "🍵 ";
+}
+
+.grocery-list li:nth-child(8)::marker {
+  --image: "🌸 ";
+}
+
+.grocery-list li:nth-child(9)::marker {
+  --image: "🧴 ";
+}
